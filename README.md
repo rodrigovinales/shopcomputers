@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Primera Entrega del Proyecto Final
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La intencion del proyecto es mejorar el actual sitio web [ShopComputers](http://www.shopcomputers.com.ar/).
+La empresa es real, existiendo en la zona oeste del Gran Buenos Aires. Trata de venta de insumos informaticos.
 
-## Available Scripts
+## Librerias utilizadas.
 
-In the project directory, you can run:
+En este proyecto, por decision personal, utilizo librerias Bootstrap, Swal y dando algunos estilos en Css.
 
-### `npm start`
+### `Ideas`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Como es un proyecto a mejorar tomando ciertas ideas de la pagina actual, se aprovecha la potencia de React JS para mejorar y optimizar el sitio. Logrando visualizar productos, navegar entre secciones y si lo requiere, concretar una compra online.
+Se arma un array con productos con valores como ID, EAN, PRECIO, CATEGORIA, NOMBRE. Para poder luego, interactuar con ellos para posibles busquedas, etc.
+Se deja sin modificar, la seccion Footer, la misma conteniendo datos importantes para que el usuario/visitante pueda acceder a comunicarse con la empresa.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `Vista del usuario`
 
-### `npm test`
+La idea del proyecto, es presentar al usuario visitante, una bienvenida con ofertas semanales, el visitante puede visualizar los productos sea por categoria o clickeando en "VER DETALLES" para mas informacion. Con opciones de compra.
+Tambien se visualiza CONTACTO la cual obtiene el mapa de las sucursales.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `Sobre el proyecto`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En el proyecto se implementa lo solicitado en clases, ademas de incluir un footer, logos e informacion reales.
+Si bien visualmente todavia no esta perfectamente logrado, se puede observar que cumple su funcion al solicitar por ejemplo, un detalle de un item en particular, mostrar todos los elementos existentes. Navegacion entre links.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Muestra del proyecto e Implementacion con Firebase`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://www.loom.com/share/330f52d506a34bcda245131d1c630d3b
 
-### `npm run eject`
+Aqui comparto la muestra del proyecto. En la misma se puede observar que se realiza la navegacion en distintas solapas, actualizando el estado de la misma, o por categorias en este caso, teniendo un producto o mas, dependendiendo de la cantidad que exista en cada categoria. Luego al seleccionar un item, se puede elegir la cantidad (No pudiendo realizar el agregado al carrito si la cantidad es 0).
+En caso de no existir stock del producto, aparece debajo del item dicha leyenda, y no pudiendo ingresar al detalle de la misma.
+Al realizar "la compra" modifica el estado apareciendo la leyendo "FINALIZAR COMPRA" y pasando al carrito. Donde a futuro se mostrará un listado de productos seleccionados. Al finalizar la compra, se descuenta del stock la cantidad seleccionada al momento de generar la orden de compra.
+Al momento de generarse la orden de compra, se puede optar por realizar el pago en plataforma MP. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+En la seccion de carro de compras, se muestra un listado con los productos seleccionados, su cantidad, precio y precio total. Pudiendo eliminar por item individual o el carrito completo, alertando en cada accion con modal libreria Sweet.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Se utiliza JSON LocalStorage para poder guardar los items..
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+En el proyecto se toma los valores que se encuentran en Firestore.
+Logrando una seccion para acceso al ADMIN, lo cual al ingresar cuenta y clave se habilita la seccion "privada".
+En la misma pueden realizar altas y modificaciones de productos existentes, utilizando un form que recorre el array y al realizar el submit, setea los valores de ese item en los campos a modificar.
+En caso de agregar producto nuevo, esos campos aparecen vacios listos para rellenar.
+Avisando con un alert de Sweet si el producto fue modificado o Agregado.
 
-## Learn More
+Se adiciona una seccion de autenticacion de usuario, la cual se solicita email y clave. En caso de ser satisfactorio, en NAVBAR se habilita una seccion llamada ADMIN, para que el propietario habilitado pueda ingresar y realizar modificaciones de stock de productos, pudiendo levantarla a Firebase desde codigo, sin necesidad de ingresar a la plataforma antes mencionada. En caso de LogOff, se remueve dicha seccion del navbar. Se toman valores de la documentacion de Firebase para lograr esta operacion. Se utiliza Bootstrap para los efectos de modal y Login.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Para ingresar a la seccion ADMIN.
+MAIL : elprofesor@coderhouse.com
+CLAVE : 123456789
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Se utiliza un input con productos existentes en "productos", para realizar la modificacion, al seleccionar uno de ellos y presionar submit, se vuelca los valores a los otros inputs listos para realizar la modificacion.
+En caso de agregar producto nuevo, se selecciona del mismo input "Agregar producto nuevo" y quedando los campos vacios para completarlos.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+A tener en cuenta..
+Se realizaron pruebas con distintas ventanas, generando dos compras simultaneas del mismo producto, la cual al generarse una orden satisfactoria y descontando del stock quedando la misma en 0, en la otra compra al momento de generar la orden, se le avisa que no hay stock del producto, a pesar de que ya lo haya seleccionado en el carrito. Evitando que se genere una compra de productos con faltantes en stock, mas alla de que minutos atras haya figurado stock disponible. Esto se simula en caso de que dos o mas usuarios compren el mismo producto y agoten stock.
