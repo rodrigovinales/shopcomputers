@@ -1,4 +1,4 @@
-const dollar = 205;
+const dollar = 130;
 
 const Productos = [
   {
@@ -9,7 +9,7 @@ const Productos = [
     categoria: "MOUSE",
     nombre: "MOUSE GENIUS ROJO USB",
     precio: 3.70 * dollar,
-    stock: 0,
+    stock: 5,
     descripcion: "Sensor optico. Resolucion 1000dpi. 3 Botones (izquierda, derecha y central c/rueda).",
     tamano: "No especifica",
     compatibilidad: "Windows 8/ 7/ Vista/ XP y Mac OSX 10.4+",
