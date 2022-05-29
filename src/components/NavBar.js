@@ -1,6 +1,5 @@
 import React from 'react';
 import logoNav from "../img/LOGO.png";
-<<<<<<< HEAD
 import { Nav, Navbar, NavDropdown, Dropdown, DropdownButton, Button } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 import logoHeader from "../img/LOGOshopcomputers.png";
@@ -9,20 +8,6 @@ import "../Css/NavBar.css";
 
 const NavComponent = () => {
 
-=======
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap'
-// import CartWidget from './CartWidget';
-import { Link, NavLink } from 'react-router-dom'
-import logoHeader from "../img/LOGOshopcomputers.png";
-// import { useContext } from 'react';
-// import { UserContext } from './Context/UserContext';
-// import ModalLogin from './ModalLogin';
-
-const NavComponent = () => {
-
-  // const { logged, logout } = useContext(UserContext)
-
->>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
   return (
 
     <header className="App-header">
@@ -31,7 +16,6 @@ const NavComponent = () => {
         <Navbar.Brand>
           <img src={logoNav} className="logoNav" alt="logoNav" /> {' '}
         </Navbar.Brand>
-<<<<<<< HEAD
         <Nav className="navOptiones">
           {/* <NavLink className="dropdown-item" to="/productos/">PRODUCTOS</NavLink> */}
           <Button className="dropdown-basic-button" href="/" title="INICIO">INICIO</Button>
@@ -120,21 +104,6 @@ const NavComponent = () => {
           <Button className="dropdown-basic-button" href="/contacto" title="CONTACTO">CONTACTO</Button>
 
           {/* <NavLink className="dropdown-item" to="/contacto">CONTACTO</NavLink> */}
-=======
-        <Nav>
-          <NavLink className="dropdown-item" to="/">INICIO</NavLink>
-          <NavLink className="dropdown-item" to="/productos/">PRODUCTOS</NavLink>
-          <NavDropdown title="CATEGORIAS" id="navbarScrollingDropdown">
-            <NavLink className="dropdown-item" to="/productos/MOUSE">MOUSE</NavLink>
-            <NavLink className="dropdown-item" to="/productos/TECLADOS">TECLADOS</NavLink>
-            <NavLink className="dropdown-item" to="/productos/ALMACENAMIENTO">ALMACENAMIENTO</NavLink>
-            <NavLink className="dropdown-item" to="/productos/ROUTER">ROUTER</NavLink>
-            <NavLink className="dropdown-item" to="/productos/PARLANTES">PARLANTES</NavLink>
-            <NavLink className="dropdown-item" to="/productos/TONERS">TONERS</NavLink>
-          </NavDropdown>
-          <NavLink className="dropdown-item" to="/contacto">CONTACTO</NavLink>
-          {/* <Link to="cart" style={{ textDecoration: 'none' }}><CartWidget /></Link>           */}
->>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
         </Nav>
       </Navbar>
       {/* <ModalLogin /> */}
