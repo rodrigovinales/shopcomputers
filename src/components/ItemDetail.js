@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 import React from "react";
 import { Link } from 'react-router-dom'
+=======
+// import React, { useContext } from "react";
+import React from "react";
+// import { useState } from "react";
+import { Link } from 'react-router-dom'
+// import ItemCount from "../components/ItemCount";
+// import { CartContext } from "../components/Context/CartContext";
+// import Swal from 'sweetalert2';
+// import withReactContent from 'sweetalert2-react-content'
+
+
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
 
 const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, descripcion, tamano, compatibilidad, conexion }) => {
 

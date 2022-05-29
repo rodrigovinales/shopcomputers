@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 import React, {useState} from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import ModalLogin from "./ModalLogin"
+=======
+import React from "react";
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
 
 
 const Inicio = () => {
 
     return (
         <div className="App">
+<<<<<<< HEAD
 <ModalLogin/>
             <h1 className="container">  BIENVENIDOS </h1>
             <p className="container"> Podras visitar nuestros productos </p>
@@ -47,6 +52,10 @@ const Inicio = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+=======
+            <h1 className="container">  BIENVENIDOS </h1>
+            <p className="container"> Podras visitar nuestros productos </p>
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
         </div>
     )
 

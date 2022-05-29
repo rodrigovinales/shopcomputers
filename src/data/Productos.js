@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const dollar = 205;
+=======
+const dollar = 130;
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
 
 const Productos = [
   {
@@ -6,10 +10,17 @@ const Productos = [
     ean: "7445216986224",
     imagen: "gmrc.jpg",
     imagen2: "mouse-genius-dx.jpg",
+<<<<<<< HEAD
     categoria: "MOUSES",
     nombre: "MOUSE GENIUS ROJO USB",
     precio: 3.70 * dollar,
     stock: 0,
+=======
+    categoria: "MOUSE",
+    nombre: "MOUSE GENIUS ROJO USB",
+    precio: 3.70 * dollar,
+    stock: 5,
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     descripcion: "Sensor optico. Resolucion 1000dpi. 3 Botones (izquierda, derecha y central c/rueda).",
     tamano: "No especifica",
     compatibilidad: "Windows 8/ 7/ Vista/ XP y Mac OSX 10.4+",
@@ -76,7 +87,11 @@ const Productos = [
     ean: 7852188966542,
     imagen: "cartucho-negro-epson-135-original.jpg",
     imagen2: "epson-135.jpg",
+<<<<<<< HEAD
     categoria: "CARTUCHOS EPSON",
+=======
+    categoria: "CARTUCHOS",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "CARTUCHO EPSON 135 NEGRO",
     precio: 9 * dollar,
     stock: 34,
@@ -146,7 +161,11 @@ const Productos = [
     ean: 2638798643429,
     imagen: "B365MA.jpg",
     imagen2: "PRIME-B365M-A-2-800x800.jpg",
+<<<<<<< HEAD
     categoria: "MOTHERBOARDS",
+=======
+    categoria: "MOTHER",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "MOTHER ASUS PRIME B365M-A",
     precio: 80 * dollar,
     stock: 4,
@@ -174,7 +193,11 @@ const Productos = [
     ean: 1915173566801,
     imagen: `GAH410M.jpg`,
     imagen2: "h410foho2.jpg",
+<<<<<<< HEAD
     categoria: "MOTHERBOARDS",
+=======
+    categoria: "MOTHER",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "MOTHER GIGABYTE H410",
     precio: 35 * dollar,
     stock: 3,
@@ -202,7 +225,11 @@ const Productos = [
     ean: 7854532154215,
     imagen: `GMTB.jpg`,
     imagen2: "mouse-genius-micro-traveler-21.jpg",
+<<<<<<< HEAD
     categoria: "MOUSES",
+=======
+    categoria: "MOUSE",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "MOUSE GENIUS BLANCO MINI CABLE RETRACTIL",
     precio: 11 * dollar,
     stock: 10,
@@ -230,7 +257,11 @@ const Productos = [
     ean: 7500365241235,
     imagen: `OFT75.jpg`,
     imagen2: "OFT75.jpg",
+<<<<<<< HEAD
     categoria: "RESMAS",
+=======
+    categoria: "RESMA",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "RESMA 75Gr A4 500 HOJAS",
     precio: 3.5 * dollar,
     stock: 20,
@@ -244,7 +275,11 @@ const Productos = [
     ean: 7171813245540,
     imagen: `TR900S.jpg`,
     imagen2: "TR900S.jpg",
+<<<<<<< HEAD
     categoria: "MOUSES",
+=======
+    categoria: "MOUSE",
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
     nombre: "MOUSE GENIUS INALAMBRICO CON PILAS",
     precio: 15 * dollar,
     stock: 10,

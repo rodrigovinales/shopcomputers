@@ -17,6 +17,10 @@
 .env.development.local
 .env.test.local
 .env.production.local
+<<<<<<< HEAD
+=======
+.gitignore
+>>>>>>> 430b8567dafdf7d57c5bdaffaa0fd07eb44cb266
 
 npm-debug.log*
 yarn-debug.log*
