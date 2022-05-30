@@ -1,7 +1,7 @@
 import React from 'react';
 import logoNav from "../img/LOGO.png";
-import { Nav, Navbar, NavDropdown, Dropdown, DropdownButton, Button } from 'react-bootstrap'
-import { Link, NavLink } from 'react-router-dom'
+import { Nav, Navbar, Dropdown, DropdownButton, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import logoHeader from "../img/LOGOshopcomputers.png";
 import "../Css/NavBar.css";
 
@@ -18,8 +18,8 @@ const NavComponent = () => {
         </Navbar.Brand>
         <Nav className="navOptiones">
           {/* <NavLink className="dropdown-item" to="/productos/">PRODUCTOS</NavLink> */}
-          <Button className="dropdown-basic-button" href="/" title="INICIO">INICIO</Button>
-          <DropdownButton id="dropdown-basic-button" title="IMPRESION">
+          <Button variant="secondary" className="dropdown-basic-button" href="/" title="INICIO">INICIO</Button>
+          <DropdownButton className="d-inline mx-1" id="dropdown-basic-button" variant="secondary" title="IMPRESION">
             <Dropdown.Item href="/productos/IMPRESORAS">IMPRESORAS</Dropdown.Item>
             <Dropdown.Item href="/productos/TONERS">TONERS</Dropdown.Item>
             <Dropdown.Item href="/productos/CARTUCHOS EPSON">CARTUCHOS EPSON</Dropdown.Item>
@@ -29,7 +29,7 @@ const NavComponent = () => {
             <Dropdown.Item href="/productos/RESMAS">RESMAS</Dropdown.Item>
           </DropdownButton>
 
-          <DropdownButton id="dropdown-basic-button" title="COMPONENTES">
+          <DropdownButton className="d-inline mx-1" variant="secondary" id="dropdown-basic-button" title="COMPONENTES">
             <Dropdown.Item href="/productos/DISCOS RIGIDOS">DISCOS RIGIDOS</Dropdown.Item>
             <Dropdown.Item href="/productos/FUENTES">FUENTES</Dropdown.Item>
             <Dropdown.Item href="/productos/GABINETES">GABINETES</Dropdown.Item>
