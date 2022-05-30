@@ -3,10 +3,7 @@
 .App {
   text-align: center;
 }
-.contenedorNav {
-  display: flex;
-  margin: 0 0 0 5px;
-}
+
 .logoHeader {
   height: 200px;
 }
@@ -21,10 +18,6 @@
 .navbar {
   width: 100%;
   background-image: linear-gradient(to right, #f5fafc, #46a3c3);
-}
-.nav-link {
-  margin: 0 20px 0 20px;
-  text-align: center;
 }
 /* 
 @media (prefers-reduced-motion: no-preference) {

@@ -67,10 +67,59 @@ const ComponenteFooter = () => {
                     </div>
                 </div>
             </div>
+  
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="row">
+            <div>
+              <ul className="cash-out">
+                <li>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/icons/American-Express.png`}
+                    alt="American-Express"
+                  />
+                </li>
+                <li>
+                <img
+                    src={`${process.env.PUBLIC_URL}/icons/mercadopago.png`}
+                    alt="mercadopago"
+                  />
+                </li>
+                <li>
+                <img
+                    src={`${process.env.PUBLIC_URL}/icons/mastercard.png`}
+                    alt="mastercard"
+                  />
+                </li>
+                <li>
+                <img
+                    src={`${process.env.PUBLIC_URL}/icons/maestro.png`}
+                    alt="maestro"
+                  />
+                </li>
+                <li>
+                <img
+                    src={`${process.env.PUBLIC_URL}/icons/Visa.png`}
+                    alt="Visa"
+                  />
+                </li>
+                <li>
+                <img
+                    src={`${process.env.PUBLIC_URL}/icons/visaelectron.png`}
+                    alt="visaelectron"
+                  />
+                </li>
+              </ul>
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+
+
             <div className ="container-footer">
                 <div className ="footer">
                     <div className ="copyright">
-                            © 2021 | <a href="https://github.com/" target="_blank" rel="noreferrer">Rodrigo</a>
+                            © 2022 | <a href="https://github.com/" target="_blank" rel="noreferrer">Rodrigo</a>
                     </div>
                 </div>
              </div>

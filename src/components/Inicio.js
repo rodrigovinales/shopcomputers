@@ -1,13 +1,10 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import ModalLogin from "./ModalLogin"
-
 
 const Inicio = () => {
 
     return (
         <div className="App">
-<ModalLogin/>
             <h1 className="container">  BIENVENIDOS </h1>
             <p className="container"> Podras visitar nuestros productos </p>
             <Carousel fade>
