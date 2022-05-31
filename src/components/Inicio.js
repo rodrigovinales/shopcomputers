@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 
+
 const Inicio = () => {
 
     return (
@@ -11,7 +12,7 @@ const Inicio = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-50"
-                        src={`${process.env.PUBLIC_URL}/productos/CCAST.jpg`}
+                        src={require (`../Assets/Imagenes/CCAST.JPG`).default }
                         alt="First slide"
                         />
                     <Carousel.Caption>

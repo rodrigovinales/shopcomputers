@@ -270,8 +270,7 @@ const Productos = [
   {
     id: 20,
     ean: 7855598643429,
-    imagen: "/toners/evertec12a.jpg",
-    // imagen2: "",
+    imagen: "toners/evertec12a.jpg",
     categoria: "TONERS",
     nombre: "TONER ALTERNATIVO 12A",
     precio: 5.75 * dollar,
