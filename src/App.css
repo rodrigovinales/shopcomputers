@@ -108,37 +108,13 @@
 .stylingCard_h6 {
   font-size: 20px;
 }
-.stylingCard_ItemDetail {
-  background-color: whitesmoke;
-  text-align: center;
-  width: 300px;
-  display: flex;
-}
-.stylingShop {
-  display: block;
-  text-align: center;
-}
+
+
 .titleSmall {
   font-size: 12px;
 }
-.descripcionFont {
-  font-size: 12px;
-}
-.detalleProducto {
-  width: 400px;
-  border: solid black 1px;
-}
-.imgDetail {
-  border: solid 2px black;
-  width: 50%;
-  height: 50%;
-  border-radius: 5px;
-  margin: 5px;
-}
-.imgItemDetail,
-.stylingItemDetail {
-  display: flex;
-}
+
+
 .carritoVacioDetail {
   display: block;
   text-align: -webkit-center;

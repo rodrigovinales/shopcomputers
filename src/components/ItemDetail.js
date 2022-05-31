@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import "../Css/ItemDetail.css"
 
 const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, descripcion, tamano, compatibilidad, conexion }) => {
 
@@ -7,12 +8,11 @@ const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, des
         <div className="container">
             <div className="stylingItemDetail">
                 <div className="card stylingCard_ItemDetail">
-                    <h6 className="stylingCard_h6">CATEGORIA: {categoria}</h6>
-                    <img src={`${process.env.PUBLIC_URL}/productos/${imagen}`} className="card-img-top" alt="" />
-                    <p className="card-title">{nombre}</p>
+                    <h6>CATEGORIA: {categoria}</h6>
+                    <img src={`${process.env.PUBLIC_URL}/productos/${imagen}`} className="imgItemDetail" alt="" />
+                    {/* <p className="card-title">{nombre}</p> */}
                     <div className="card-body">
-                        <span className="btn btn-dark disabled">$ {precio} </span>
-                        <p className="titleSmall">IVA NO INCLUIDO</p>
+                        <span className="btn btn-danger disabled">$ {precio} <p className="titleSmall">IVA INCLUIDO</p></span>
                         <div className="imgItemDetail">
                             <img src={`${process.env.PUBLIC_URL}/productos/${imagen}`} className="imgDetail" alt="" />
                             {
@@ -21,29 +21,30 @@ const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, des
                         </div>
                     </div>
                 </div>
-
-                <div className="detalleProducto">
-                    <h1>{nombre}</h1>
-                    <p>Lo que tenés que saber de este producto</p>
-                    <ul className="descripcionFont">
-                        <li>
-                            <p>{descripcion}</p>
-                        </li>
-                        <li>
-                            {tamano === "" ? <p>DIMENSIONES: NO ESPECIFICA</p> : <p>DIMENSIONES: {tamano}</p>}
-                        </li>
-                        <li>
-                            {compatibilidad === "" ? <p>COMPATIBILIDAD: NO ESPECIFICA</p> : <p>COMPATIBILIDAD: {compatibilidad}</p>}
-                        </li>
-                        <li>
-                            {conexion === "" ? <p>CONEXION: NO ESPECIFICA </p> : <p>CONEXION: {conexion}</p>}
-                        </li>
-                    </ul>
-                    <hr />
-                    <div className="stylingShop">
-                        <button className="btn btn-outline-success disabled"> STOCK DISPONIBLE</button>
+                <div className="container">
+                    <div className="detalleProducto">
+                        <h1>{nombre}</h1>
+                        <p>Lo que tenés que saber de este producto</p>
+                        <ul className="descripcionFont">
+                            <li>
+                                <p> - {descripcion}</p>
+                            </li>
+                            <li>
+                                {tamano ? <p> - DIMENSIONES: {tamano}</p> : null}
+                            </li>
+                            <li>
+                                {compatibilidad ? <p> - COMPATIBILIDAD: {compatibilidad} </p> : null}
+                            </li>
+                            <li>
+                                {conexion ? <p> - CONEXION: {conexion} </p> : null}
+                            </li>
+                        </ul>
                         <hr />
-                        <Link to="/Productos" className="btn btn-info"> VOLVER </Link>
+                        <div className="stylingShop">
+                            <button className="btn btn-success disabled"> STOCK DISPONIBLE</button>
+                            <hr />
+                            <Link to="/" className="btn btn-info"> IR A INICIO </Link>
+                        </div>
                     </div>
                 </div>
             </div>
