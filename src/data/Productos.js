@@ -1,4 +1,4 @@
-const dollar = 205;
+const dollar = 130;
 
 const Productos = [
   {
@@ -278,6 +278,32 @@ const Productos = [
     descripcion: "Toner Alternativo para HP 12A. Rendimiento : 2000 Copias al 5% de cobertura de la hoja.",
     tamano: "N/A",
     compatibilidad: "LaserJet 1010/1012/1015/1018/1020/1022/3015/3020/3030/3050/3052/3055 M1005/1319",
+    conexion: "N/A"
+  },
+  {
+    id: 21,
+    ean: 7855598434,
+    imagen: "toners/toner85a.png",
+    categoria: "TONERS",
+    nombre: "TONER HP 35A/36A/85A NEGRO ALTERNATIVO",
+    precio: 7.5 * dollar,
+    stock: 2,
+    descripcion: "Toner Alternativo para HP. Rendimiento : 2000 Copias al 5% de cobertura de la hoja.",
+    tamano: "N/A",
+    compatibilidad: "LaserJet -P1005/ P1006/ P1505/ P1505N/ M1120/ M1120N/ M1522/ M1522N/ M1522NF/ P1100/ P1102/ P1102W/ M1130/ 1210MFP / M1132MFP/ P1560/ P1566/ 1600/ 1606/ M1536DNF/ P1106",
+    conexion: "N/A"
+  },
+  {
+    id: 22,
+    ean: 785553498434,
+    imagen: "toners/toner111s.jpg",
+    categoria: "TONERS",
+    nombre: "Toner Alternativo Samsung 111s",
+    precio: 13.07 * dollar,
+    stock: 2,
+    descripcion: "Rendimiento : 1000 Copias al 5% de cobertura de la hoja.",
+    tamano: "N/A",
+    compatibilidad: "M-2020/2020W/2022/2022W/2070/2070W",
     conexion: "N/A"
   }
 ]

@@ -8,10 +8,10 @@ const Item = ({ categoria, imagen, nombre, precio, id, stock }) => {
             <div key={id} className="card stylingCard">
                 <h6 className="stylingCard stylingCard_h6">{categoria}</h6>
                 <img src={`${process.env.PUBLIC_URL}/productos/${imagen}`} className="card-img-top " alt="imagen" />
-                <p className="card-title">{nombre}</p>
+                <p className="card-title">{(nombre).toUpperCase()}</p>
                 <div className="card-body">
-                    <span className="btn btn-dark disabled">$ {precio} </span>
-                    <p className="titleSmall">IVA NO INCLUIDO</p>
+                    <span className="btn btn-dark disabled">$ {(precio).toFixed(2)} </span>
+                    {/* <p className="titleSmall">IVA NO INCLUIDO</p> */}
                 </div>
                 {
                     stock <= 0 ? <button className="btn btn-danger disabled">SIN STOCK</button>
