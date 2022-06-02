@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Item from "../Item/Item"
+import Item from "../Item/Item";
 
 const ItemList = ({ items }) => {
 
@@ -8,10 +8,11 @@ const ItemList = ({ items }) => {
     return (
         <div className="app">
             <input
-                className="mb-3"
+                className="inputProductos"
                 placeholder="Nombre de producto a buscar..."
                 onChange={(e) => setQuery(e.target.value.toLowerCase())}
             />
+
             <hr></hr>
             <ul className="list">
                 {items.filter((search) =>
@@ -21,7 +22,7 @@ const ItemList = ({ items }) => {
                 ))}
             </ul>
         </div>
-        
+
     );
 }
 

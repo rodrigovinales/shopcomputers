@@ -149,8 +149,8 @@
 }
 .animateCargando {
   margin: 100px auto;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   z-index: 1;
   border-radius: 50%;
   position: relative;
@@ -158,7 +158,7 @@
   border-radius: 50%;
   border-top: 16px solid #765cd3;
   -webkit-animation: spin 0.5s linear infinite;
-  animation: spin 0.5s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -178,16 +178,19 @@
     transform: rotate(360deg);
   }
 }
-.botonRemoveItem {
+
+.inputProductos {
+  font-weight: 900;
   font-family: "Montserrat";
-  font-weight: 300;
-  color: red;
-  cursor: pointer;
-  text-align: center;
-}
-.botonRemoveItem:hover {
-  background-color: red;
   color: black;
   font-size: 20px;
-  font-weight: 900;
+  border-color: #000;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.inputProductos:hover {
+  cursor: pointer;
+  background-color: #86C3D8;
 }
