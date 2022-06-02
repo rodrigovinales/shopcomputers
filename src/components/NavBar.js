@@ -60,9 +60,11 @@ const NavComponent = () => {
             id="dropdown-basic-button"
             title="PERIFERICOS"
             variant="secondary">
+            <div className='probando'>
             <Dropdown.Item href="/productos/WEBCAM">WEBCAM</Dropdown.Item>
             <Dropdown.Item href="/productos/TECLADOS">TECLADOS</Dropdown.Item>
             <Dropdown.Item href="/productos/MOUSES">MOUSES</Dropdown.Item>
+            </div>
           </DropdownButton>
 
           <DropdownButton
@@ -70,9 +72,12 @@ const NavComponent = () => {
             id="dropdown-basic-button"
             title="ALMACENAMIENTO"
             variant="secondary">
+            <div className='probando'>
+
             <Dropdown.Item href="/productos/DISCOS EXTERNOS">DISCOS EXTERNOS</Dropdown.Item>
             <Dropdown.Item href="/productos/PENDRIVES">PENDRIVES</Dropdown.Item>
             <Dropdown.Item href="/productos/CD-DVD-BLURAY">CD-DVD-BLURAY</Dropdown.Item>
+            </div>
           </DropdownButton>
 
           <DropdownButton
@@ -80,9 +85,12 @@ const NavComponent = () => {
             id="dropdown-basic-button"
             title="CONECTIVIDAD"
             variant="secondary">
+            <div className='probando'>
+
             <Dropdown.Item href="/productos/ROUTERS">ROUTERS</Dropdown.Item>
             <Dropdown.Item href="/productos/PLACA DE RED">PLACA DE RED</Dropdown.Item>
             <Dropdown.Item href="/productos/CONEXION INALAMBRICA">CONEXION INALAMBRICA</Dropdown.Item>
+            </div>
           </DropdownButton>
 
           <Button
@@ -96,9 +104,11 @@ const NavComponent = () => {
             id="dropdown-basic-button"
             title="AUDIO"
             variant="secondary">
+            <div className='probando'>
             <Dropdown.Item href="/productos/PARLANTES">PARLANTES</Dropdown.Item>
             <Dropdown.Item href="/productos/AURICULARES">AURICULARES</Dropdown.Item>
             <Dropdown.Item href="/productos/MICROFONOS">MICROFONOS</Dropdown.Item>
+            </div>
           </DropdownButton>
 
           <Button
