@@ -289,9 +289,9 @@ const Productos = [
     precio: (7.5 * dollar).toFixed(2),
     stock: 2,
     descripcion: "Toner Alternativo para HP. Rendimiento : 2000 Copias al 5% de cobertura de la hoja.",
-    tamano: "N/A",
+    // tamano: "N/A",
     compatibilidad: "LaserJet -P1005/ P1006/ P1505/ P1505N/ M1120/ M1120N/ M1522/ M1522N/ M1522NF/ P1100/ P1102/ P1102W/ M1130/ 1210MFP / M1132MFP/ P1560/ P1566/ 1600/ 1606/ M1536DNF/ P1106",
-    conexion: "N/A"
+    // conexion: "N/A"
   },
   {
     id: 22,
@@ -302,9 +302,35 @@ const Productos = [
     precio: (13.07 * dollar).toFixed(2),
     stock: 2,
     descripcion: "Rendimiento : 1000 Copias al 5% de cobertura de la hoja.",
-    tamano: "N/A",
+    // tamano: "N/A",
     compatibilidad: "M-2020/2020W/2022/2022W/2070/2070W",
-    conexion: "N/A"
+    // conexion: "N/A"
+  },
+  {
+    id: 23,
+    ean: 234234234,
+    imagen: "toners/1060evertec.jpg",
+    categoria: "TONERS",
+    nombre: "Toner Alternativo Brother Tn1060",
+    precio: (7.08 * dollar).toFixed(2),
+    stock: 2,
+    descripcion: "Rendimiento : Negro 1000 copias al 5% de cobertura de la pagina",
+    // tamano: "N/A",
+    compatibilidad: "HL-1110/1110E/1110R/1112/1112E/1200 DCP-1510/1510R/1512/1512R MFC-1810/1810E/1810R/1815/dcp1617w",
+    // conexion: "N/A"
+  },
+  {
+    id: 24,
+    ean: 234234223432434,
+    imagen: "toners/DR1060.jpg",
+    categoria: "TONERS",
+    nombre: "DRUM - UNIDAD DE IMAGEN DR1060 - BROTHER",
+    precio: (12.60 * dollar).toFixed(2),
+    stock: 2,
+    descripcion: "RENDIMIENTO DE IMPRESION (valores aproximados): 10.000 Impresiones",
+    // tamano: "N/A",
+    compatibilidad: "Brother HL 1110, HL 1112, HL 1212W, DCP 1510, DCP 1510, DCP 1512, DCP 1518, DCP 1617NW, MFC 1810 , MFC 1811, MFC 1813, MFC 1815, MFC 1818.",
+    // conexion: "N/A"
   }
 ]
 
