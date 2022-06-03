@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import "../Css/inicio.css"
 
 
 const Inicio = () => {
@@ -7,44 +8,46 @@ const Inicio = () => {
     return (
         <div className="App">
             <h1 className="container">  BIENVENIDOS </h1>
-            <p className="container"> Podras visitar nuestros productos </p>
-            <Carousel fade>
+            {/* <p className="container"> Podras visitar nuestros productos </p> */}
+            
+            <Carousel>
                 <Carousel.Item>
                     <img
-                        className="d-block w-50"
+                        className="sizeImg"
                         src={require (`../Assets/Imagenes/CCAST.JPG`).default }
                         alt="First slide"
                         />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3 className="titleCarousel">Google ChromeCast</h3>
+                        <p className="titleCarousel_parrafo">Converti tu tele en Smart !!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-50"
+                        className="sizeImg"
                         src={`${process.env.PUBLIC_URL}/productos/GPU115.jpg`}
                         alt="Second slide"
                         />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3 className="titleCarousel">Parlantes Genius Usb</h3>
+                        <p className="titleCarousel_parrafo">Ideal para notebooks. Buena definición de sonido.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-50"
+                        className="sizeImg"
                         src={`${process.env.PUBLIC_URL}/productos/thnvanspiemader.jpg`}
                         alt="Third slide"
                         />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3 className="titleCarousel">Parlantes Thoner&Vander</h3>
+                        <p className="titleCarousel_parrafo">Definición de sonido para exigentes.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            
         </div>
     )
 

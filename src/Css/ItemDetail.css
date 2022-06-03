@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .descripcionFont {
-  font-size: 12px;
+  font-size: 16px;
   list-style:none;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .stylingCard_ItemDetail {
@@ -36,6 +40,7 @@
   width: 600px;
   border: solid black 1px;
   /* height: auto; */
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer-bottom {
@@ -65,4 +70,14 @@
 }
 .cash-out img:hover {
 	opacity: 0.7;
+}
+
+.hOneItemDet {
+  text-align: center;
+}
+.pStyling {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 10px;
 }

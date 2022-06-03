@@ -1,8 +1,14 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap'
+
 import "../Css/ItemDetail.css"
 
 const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, descripcion, tamano, compatibilidad, conexion }) => {
+
+    const back = () => {
+        window.history.back();
+    }
 
     return (
         <div className="container">
@@ -23,8 +29,8 @@ const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, des
                 </div>
                 <div className="container">
                     <div className="detalleProducto">
-                        <h1>{nombre}</h1>
-                        <p>Lo que tenés que saber de este producto</p>
+                        <h1 className="hOneItemDet">{nombre}</h1>
+                        <p className="pStyling">Lo que tenés que saber de este producto</p>
                         <ul className="descripcionFont">
                             <li>
                                 <p> - {descripcion}</p>
@@ -41,9 +47,15 @@ const ItemDetail = ({ categoria, imagen, imagen2, precio, nombre, stock, id, des
                         </ul>
                         <hr />
                         <div className="stylingShop">
-                            <button className="btn btn-success disabled"> STOCK DISPONIBLE</button>
+                            <Button
+                                variant="outline-secondary"
+                                size="lg">
+                                STOCK DISPONIBLE
+                            </Button>
                             <hr />
-                            <Link to="/" className="btn btn-info"> IR A INICIO </Link>
+                            <Link to="/" className="m-1 btn btn-info btn-sm"> IR A INICIO </Link>
+                            <button className="btn btn-sm btn-danger" onClick={back}> VOLVER</button>
+
                         </div>
                     </div>
                 </div>
