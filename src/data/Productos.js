@@ -1,4 +1,4 @@
-const dollar = 130;
+const dollar = 135;
 
 const Productos = [
   {
@@ -207,7 +207,7 @@ const Productos = [
     precio: (11 * dollar).toFixed(2),
     stock: 10,
     descripcion: "MOUSE DE DIMENSIONES PEQUEÑAS CON CABLE RETRACTIL IDEAL PARA TRANSPORTAR",
-    tamano: "(Ancho x Profundidad x Altura) – 74 x 39 x 28 mm",
+    tamano: "(Ancho x Profundidad x Altura) - 74 x 39 x 28 mm",
     compatibilidad: "Windows 7,Windows 8,Windows 8.1,Windows 10,macOS X 10.8",
     conexion: "USB"
   },
@@ -330,6 +330,32 @@ const Productos = [
     descripcion: "RENDIMIENTO DE IMPRESION (valores aproximados): 10.000 Impresiones",
     // tamano: "N/A",
     compatibilidad: "Brother HL 1110, HL 1112, HL 1212W, DCP 1510, DCP 1510, DCP 1512, DCP 1518, DCP 1617NW, MFC 1810 , MFC 1811, MFC 1813, MFC 1815, MFC 1818.",
+    // conexion: "N/A"
+  },
+  {
+    id: 25,
+    ean: 2323432434,
+    imagen: "toners/79a.jpg",
+    categoria: "TONERS",
+    nombre: "toner alternativo HP CF79A NEGRO",
+    precio: (10.85 * dollar).toFixed(2),
+    stock: 1,
+    descripcion: "RENDIMIENTO DE IMPRESION (valores aproximados): 10.000 Impresiones",
+    // tamano: "N/A",
+    compatibilidad: "HP M12W",
+    // conexion: "N/A"
+  },
+  {
+    id: 26,
+    ean: 23287987934,
+    imagen: "toners/17A.jpg",
+    categoria: "TONERS",
+    nombre: "toner alternativo HP CF17A SIN CHIP NEGRO",
+    precio: (8.30 * dollar).toFixed(2),
+    stock: 1,
+    descripcion: "RENDIMIENTO DE IMPRESION (valores aproximados): 10.000 Impresiones",
+    // tamano: "N/A",
+    compatibilidad: "Laserjet Pro M102w M130fw, Laserjet Pro MFP M130fw M130nw M130fn M130a ",
     // conexion: "N/A"
   }
 ]
